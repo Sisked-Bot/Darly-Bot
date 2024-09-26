@@ -6,13 +6,13 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let txt = `*Hola!, te invito a unirte a los grupos oficiales del Bot para convivir con la comunidad :D*
 
-> ⭐ Enlace Grupo Ofc 𝑺𝑰𝑺𝑲𝑬𝑫 𝑩𝑶𝑻 - 𝑴𝑫 ⭐
+> 🧸 Enlace Grupo Ofc 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩
 
 *🎌* ${group}
 
 *꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒦꒷*
 
-> 📫 Enlace anulado? entre aquí! 
+> 🦋 Enlace anulado? entre aquí! 
 
 Canal :
 *🏷️* ${canal}
