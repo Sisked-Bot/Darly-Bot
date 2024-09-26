@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/DanielDiod/Sumi-Sakurasawa",
+  "homepage": "https://github.com/Sisked-Bot/Darly-Bot",
   "author": {
-    "name": "DanielDiod"
+    "name": "Sisked"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielDiod/Sumi-Sakurasawa.git"
+    "url": "git+https://github.com/Sisked-Bot/Darly-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/DanielDiod/Sumi-Sakurasawa/issues"
+    "url": "https://github.com/Sisked-Bot/Darly-Bot/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
