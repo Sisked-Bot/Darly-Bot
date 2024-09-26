@@ -1,15 +1,21 @@
-import Scraper from "@SumiFX/Scraper"
-
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) return m.reply('🍭 Ingresa el nombre de la imágen que estas buscando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* 𝑺𝑰𝑺𝑲𝑬𝑫-𝑩𝑶𝑻 Icons`)
-try {
-let { dl_url } = await Scraper.GoogleImage(text)
-await conn.sendFile(m.chat, dl_url, 'thumbnail.jpg', null, m)
-} catch {
-}}
-handler.help = ['imagen <búsqueda>']
-handler.tags = ['img']
-handler.command = ['image', 'gimage', 'imagen']
-handler.register = true 
-//handler.limit = 1
-export default handler
+import {googleImage} from '@bochilteam/scraper';
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (!text) return conn.reply(m.chat, `*⚠️ Uso Correcto: ${usedPrefix + command} Extrella dorada*`, m, rcanal);
+conn.reply(m.chat, '🦋 *Descargando su imagen...*', m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: wm,
+previewType: 0, thumbnail: icons,
+sourceUrl: channel }}})
+const res = await googleImage(text);
+const image = await res.getRandom();
+const link = image;
+const messages = [['Imagen 1', dev, await res.getRandom(),
+[[]], [[]], [[]], [[]]], ['Imagen 2', dev, await res.getRandom(), [[]], [[]], [[]], [[]]], ['Imagen 2', dev, await res.getRandom(), [[]], [[]], [[]], [[]]], ['Imagen 4', dev, await res.getRandom(), [[]], [[]], [[]], [[]]]]
+await conn.sendCarousel(m.chat, `🧸 Resultado de ${text}`, '🔎 Imagen - Descargas', null, messages, m);
+};
+handler.help = ['imagen + Texto'];
+handler.tags = [''descargas'];
+handler.command = ['image', 'imagen'];
+handler.register = true;
+export default handler;
