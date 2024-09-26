@@ -10,9 +10,9 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const oi = `${pesan}`;
-  let teks = `*𝑺𝑰𝑺𝑲𝑬𝑫-𝑩𝑶𝑻 ✨*\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ Despierten\n`;
+  let teks = `*𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩*\n\n *Integrantes :  ${participants.length}* ${oi}\n\n┌──⭓ Despierten\n`;
   for (const mem of participants) {
-    teks += `⭐ @${mem.id.split('@')[0]}\n`;
+    teks += `🌸 @${mem.id.split('@')[0]}\n`;
   }
   teks += `└───────⭓
 
@@ -21,7 +21,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
 };
 handler.help = ['todos'];
 handler.tags = ['group'];
-handler.command = /^(tagall|invocar|marcar|todos|invocación|ta)$/i;
+handler.command = /^(tagall|invocar|marcar|todos|invocación|todas|niñas)$/i;
 handler.admin = true;
 handler.group = true;
 export default handler;
