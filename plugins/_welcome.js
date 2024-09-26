@@ -30,6 +30,12 @@ export async function before(m, {conn, participants, groupMetadata}) {
   }
   
   if (chat.bienvenida && m.messageStubType == 32) {
-    let kick = `┌─★ 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩 \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
-await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal)
+    if (chat.sBye) {
+      let user = `@${m.messageStubParameters[0].split`@`[0]}`
+      let bye = chat.sBye.replace('@user', () => user);
+      await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal)
+    } else {
+      let kick = `┌─★ 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩 \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+      await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal)
+    }
 }}
