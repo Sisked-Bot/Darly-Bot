@@ -1,1 +1,15 @@
-let toM=_0x40c8fb=>'@'+_0x40c8fb['split']('@')[0x0];function handler(_0x16baa3,{groupMetadata:_0x2eeb2d}){let _0x2d5531=_0x2eeb2d['participants']['map'](_0x359761=>_0x359761['id']),_0xe68d49=_0x2d5531['getRandom'](),_0x3adf0d;do _0x3adf0d=_0x2d5531['getRandom']();while(_0x3adf0d===_0xe68d49);_0x16baa3['reply']('*'+toM(_0xe68d49)+',\x20😌DEBERIAS CASARTE* 💍 *CON*\x20'+toM(_0x3adf0d)+',\x20*HACEN BUENA PAREJA* 😯💝👌',null,{'mentions':[_0xe68d49,_0x3adf0d]});}handler['help']=['formarpareja'],handler['tags']=['fun'],handler['command']=['formarpareja','formarparejas'],handler['group']=!![],handler['register']=!![];export default handler;
+let toM = a => '@' + a.split('@')[0]
+function handler(m, { groupMetadata }) {
+let ps = groupMetadata.participants.map(v => v.id)
+let a = ps.getRandom()
+let b
+do b = ps.getRandom()
+while (b === a)
+m.reply(`*${toM(a)}, 𝙳𝙴𝙱𝙴𝚁𝙸𝙰𝚂 𝙲𝙰𝚂𝙰𝚁𝚃𝙴 💍 𝙲𝙾𝙽 ${toM(b)}, 𝙷𝙰𝙲𝙴𝙽 𝚄𝙽𝙰 𝙱𝚄𝙴𝙽𝙰 𝙿𝙰𝚁𝙴𝙹𝙰 🤭*`, null, {
+mentions: [a, b]
+})}
+handler.help = ['formarpareja']
+handler.tags = ['fun']
+handler.command = ['formarpareja','formarparejas']
+handler.group = true
+export default handler
