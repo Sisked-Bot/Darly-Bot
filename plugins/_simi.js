@@ -26,6 +26,6 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)
 }}}
 handler.help = ['simsimi']
-handler.tags = ['General']
+handler.tags = ['group']
 handler.command = ['bot', 'simi', 'simsimi'] 
 export default handler
