@@ -42,7 +42,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       global.dfail('rowner', m, conn)
       throw false
       }
-      bot.antiPrivado = isEnable
+      bot.antiPrivate = isEnable
       break
 
       case 'antilink':
