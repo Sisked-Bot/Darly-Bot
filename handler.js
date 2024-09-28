@@ -89,8 +89,6 @@ export async function handler(chatUpdate) {
                     chat.bienvenida = true
                 if (!('modoadmin' in chat)) 
                     chat.modoadmin = false
-                if (!('detect' in chat)) 
-                    chat.detect = false
                 if (!('audios' in chat))
                     chat.audios = false
                 if (!('antiLink' in chat))
