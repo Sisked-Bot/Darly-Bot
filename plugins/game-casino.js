@@ -30,13 +30,13 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         if (user.limit >= count * 1) {
             user.limit -= count * 1
             if (Aku > Kamu) {
-                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 Sumi Sakurasawa* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 🍬 Dulces.`.trim(), m, rcanal)
+                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 🍬 Dulces.`.trim(), m, rcanal)
             } else if (Aku < Kamu) {
                 user.limit += count * 2
-                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 Sumi Sakurasawa* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *GANASTE* ${formatNumber(count * 2)} 🍬 Dulces.`.trim(), m, rcanal)
+                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *GANASTE* ${formatNumber(count * 2)} 🍬 Dulces.`.trim(), m, rcanal)
             } else {
                 user.limit += count * 1
-                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 Sumi Sakurasawa* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username} obtienes ${formatNumber(count * 1)} 🍬 Dulces.`.trim(), m, rcanal)
+                conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n'+ `➠ *🍫 𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username} obtienes ${formatNumber(count * 1)} 🍬 Dulces.`.trim(), m, rcanal)
             }
         } else conn.reply(m.chat, `No tienes *${formatNumber(count)} 🍬 dulces* para apostar!`.trim(), m, rcanal)
     
