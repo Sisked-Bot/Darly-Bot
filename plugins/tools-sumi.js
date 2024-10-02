@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
-if (!text) return conn.reply(m.chat, '*𝘌𝘴𝘤𝘳𝘪𝘣𝘦 𝘶𝘯 𝘛𝘦𝘹𝘵𝘰 𝘱𝘢𝘳𝘢 𝘩𝘢𝘣𝘭𝘢𝘳 𝘤𝘰𝘯 𝘚𝘪𝘴𝘬𝘦𝘥*', m);
+if (!text) return conn.reply(m.chat, '*𝘌𝘴𝘤𝘳𝘪𝘣𝘦 𝘶𝘯 𝘛𝘦𝘹𝘵𝘰 𝘱𝘢𝘳𝘢 𝘩𝘢𝘣𝘭𝘢𝘳 𝘤𝘰𝘯 𝘋𝘢𝘳𝘭𝘺*', m);
 
 try {
-let msg = await conn.sendMessage(m.chat, {text: '*𝘚𝘪𝘴𝘬𝘦𝘥 𝘦𝘴𝘵𝘢́ 𝘦𝘴𝘤𝘳𝘪𝘣𝘪𝘦𝘯𝘥𝘰...*'});
+let msg = await conn.sendMessage(m.chat, {text: '*𝘋𝘢𝘳𝘭𝘺 𝘦𝘴𝘵𝘢́ 𝘦𝘴𝘤𝘳𝘪𝘣𝘪𝘦𝘯𝘥𝘰...*'});
 
 let userid = conn.getName(m.sender) || 'default';
 let apiurl = `https://api.guruapi.tech/ai/gpt4?username=${userid}&query=hii${encodeURIComponent(text)}`;
