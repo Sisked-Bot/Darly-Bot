@@ -261,6 +261,9 @@ export async function handler(chatUpdate) {
                     if (name != 'owner-unbanbot.js' && setting?.banned)
                         return
                 }
+                let adminMode = global.db.data.chats[m.chat].modoadmin
+
+                if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin) return
                 if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { 
                     fail('owner', m, this)
                     continue
