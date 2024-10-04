@@ -26,14 +26,32 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     isUser = true
     user.useDocument = isEnable
     break
-      
-      case 'serbot': 
+
+      case 'modoadmin': case 'soloadmin':
+      if (m.isGroup) {
+      if (!(isAdmin || isOwner)) {
+      global.dfail('admin', m, conn)
+      throw false
+      }}
+      chat.modoadmin = isEnable          
+      break
+    
+      case 'jadibotmd': case 'modojadibot': case 'serbotmd': case 'modoserbot': 
       isAll = true
       if (!isROwner) {
       global.dfail('rowner', m, conn)
       throw false
       }
-      bot.serbot = isEnable
+      bot.jadibotmd = isEnable
+      break 
+
+      case 'autobiografia': case 'bio': case 'biografia': case 'status': 
+      isAll = true
+      if (!isROwner) {
+      global.dfail('rowner', m, conn)
+      throw false
+      }
+      bot.autobio = isEnable
       break 
 
       case 'antiprivado':
@@ -53,6 +71,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         }
       }
       chat.antiLink = isEnable
+      break
+
+      case 'audios':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.audios = isEnable
       break
       
       case 'nsfw':
