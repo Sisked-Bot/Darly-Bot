@@ -31,6 +31,7 @@ global.botname = '𝐃𝐀𝐑𝐋𝐘 𝐁𝐎𝐓 ᡣ𐭩'
 global.textbot = `Powered By Sisked`
 global.listo = 'Completado ✯'
 global.namechannel = '𝑺𝑰𝑺𝑲𝑬𝑫 𝑩𝑶𝑻'
+global.baileys = '@whiskeysockets/baileys'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─* 
 
