@@ -88,12 +88,11 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 
       case 'audios':
       if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.audios = isEnable
+      if (!(isAdmin || isOwner)) {
+      global.dfail('admin', m, conn)
+      throw false
+      }}
+      chat.audios = isEnable          
       break
       
       case 'nsfw':
